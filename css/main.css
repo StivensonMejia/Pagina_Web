@@ -1,5 +1,9 @@
-
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
 body {
+    font-size:1.6rem;
     margin: 0;
     padding: 0;
     position: fixed;
@@ -7,6 +11,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    background-image: url(../assets/img/fondo.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 a {
     text-decoration: none;
@@ -23,7 +31,7 @@ header .header-icons-container {
     width: 100%;
     height: 50px;
     display: grid;
-    background-color: #47cfac;
+    background-color: #6f9663;
 }
 header .header-icons-container .icons {
     width: 300px;
@@ -38,13 +46,19 @@ header .header-icons-container .icons {
 header .icons span {
     color: white;
 }
+header .icons span:hover {
+    color: #f3aa5c;
+}
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 90px;
+    background-color: rgba(0, 0, 0, 0.363);
 }
 nav .nav-logo-container {
     margin-left: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 30px 30px ;
 }
 nav .nav-logo-container img {
     width: 220px;
@@ -57,6 +71,54 @@ nav .profile-link {
     margin-right: 50px;
 }
 nav .profile-link a {
-    color: black;
-    border-bottom: 1px solid black;
+    color: rgb(255, 255, 255);
+    background-color: #c47826;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+nav .profile-link a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #c47826;
+}
+nav .profile-link a span {
+    padding-left: 22px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+main {
+    background-color: rgba(0, 0, 0, 0.363);
+    height: 100%;
+    width: 100%;
+}
+main .main-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+main .main-container h1 {
+    display: inline-block;
+    font-size: 5rem;
+    color: white;
+    font-weight: bolder;
+    align-self: center;
+    margin-top: 10%;
+}
+main .main-container button {
+    width: 150px;
+    height: 50px;
+    margin-top: 100px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.4rem;
+    background-color: #c47826;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+}
+main .main-container button:hover {
+    background-color: white;
+    color: #c47826;
 }
